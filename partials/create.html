@@ -1,0 +1,83 @@
+<div class="tab-content active" id="createTab">
+    <div class="hero-section">
+        <h1 class="main-title">أنشئ صورًا <span class='gradient-text'>مذهلة</span></h1>
+        <p class="main-subtitle">حول أفكارك إلى صور رائعة باستخدام مولد الصور المتقدم. ما عليك سوى وصف ما تريد رؤيته.</p>
+    </div>
+
+    <div class="input-section">
+        <div class="prompt-container">
+            <textarea id="promptInput" class="prompt-input" placeholder="أحضر فكرتك إلى الحياة..."></textarea>
+            <div class="input-focus-overlay" id="inputFocusOverlay"></div>
+            <button class="cancel-focus-btn" id="cancelFocusBtn">إلغاء</button>
+        </div>
+        <button id="generateBtn" class="generate-btn">إنشاء</button>
+    </div>
+
+    <div class="settings-section">
+        <div class="settings-row">
+            <div class="setting-group">
+                <label class="setting-label">الحجم</label>
+                <div class="size-options">
+                    <button class="size-option selected" data-size="square">مربع</button>
+                    <button class="size-option" data-size="landscape">أفقي</button>
+                    <button class="size-option" data-size="portrait">عمودي</button>
+                    <button class="size-option" data-size="panorama">بانوراما</button>
+                    <button class="size-option" data-size="cinematic">سينمائي</button>
+                    <button class="size-option" data-size="story">ستوري</button>
+                </div>
+            </div>
+
+            <div class="setting-group">
+                <label class="setting-label">الجودة</label>
+                <div class="size-options">
+                    <button class="size-option selected" data-quality="medium">متوسطة</button>
+                    <button class="size-option" data-quality="high">عالية</button>
+                    <button class="size-option" data-quality="ultra">فائقة</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="setting-group">
+            <label class="setting-label">النمط</label>
+            <div class="style-options" id="styleOptions">
+                <!-- Will be populated by JavaScript -->
+            </div>
+            <button class="view-all-styles-btn" onclick="openStyleModal()">عرض الكل</button>
+        </div>
+
+        <div class="advanced-options">
+            <div class="advanced-header">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M12 1v6m0 6v6"></path><path d="m21 12-6-3-6 3-6-3"></path><path d="m3 12 6 3 6-3 6 3"></path></svg>
+                <h3>الخيارات المتقدمة</h3>
+            </div>
+            <div class="advanced-option-item" id="watermarkOption">
+                <div class="option-toggle">
+                    <span>إضافة علامة مائية</span>
+                    <button class="toggle-btn" id="watermarkToggle">ON</button>
+                </div>
+            </div>
+            <div class="advanced-option-item">
+                <div class="option-toggle">
+                    <span>تحسين الوصف تلقائيًا</span>
+                    <button class="toggle-btn" id="enhanceToggle">OFF</button>
+                </div>
+            </div>
+            <div class="advanced-option-item">
+                <div class="option-toggle">
+                    <span>توليد سريع</span>
+                    <button class="toggle-btn" id="fastToggle">OFF</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="output-section">
+        <div id="imagePreview" class="image-preview-placeholder">
+            <!-- Preview will appear here -->
+        </div>
+        <div class="image-actions">
+            <button id="saveToGalleryBtn" class="action-btn save-btn">حفظ</button>
+            <button id="downloadImageBtn" class="action-btn download-btn">تنزيل</button>
+        </div>
+    </div>
+</div>

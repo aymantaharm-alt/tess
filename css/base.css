@@ -1,0 +1,41 @@
+:root {
+    --primary-dark: #0f172a;
+    --primary-light: #f8fafc;
+    --accent-gold: #d4af37;
+    --accent-purple: #7e22ce;
+    --gradient-start: #4f46e5;
+    --gradient-end: #7e22ce;
+    --light-bg: #f0f4f8;
+    --light-card: #ffffff;
+    --light-accent: #6366f1;
+    --light-text: #334155;
+    --light-text-secondary: #64748b;
+}
+
+body {
+    font-family: 'Tajawal', 'Poppins', sans-serif;
+    transition: background-color 0.5s ease, color 0.5s ease;
+    margin: 0;
+    overflow-x: hidden;
+    position: relative;
+}
+
+body.dark-mode {
+    background-color: var(--primary-dark);
+    color: var(--primary-light);
+}
+
+body.light-mode {
+    background-color: var(--light-bg);
+    color: var(--light-text);
+}
+
+/* مؤثرات بصرية في الخلفية */
+.particles {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}

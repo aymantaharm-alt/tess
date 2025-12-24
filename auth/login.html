@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسجيل الدخول - ATIGAI</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/forms.css">
+    <style>
+        body {
+            background: linear-gradient(135deg, #0f172a, #1e293b);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .auth-container {
+            background: rgba(30, 41, 59, 0.9);
+            padding: 2.5rem;
+            border-radius: 1rem;
+            width: 100%;
+            max-width: 400px;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .auth-title {
+            text-align: center;
+            color: #f8fafc;
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+        }
+        .form-group {
+            margin-bottom: 1rem;
+        }
+        .form-group label {
+            display: block;
+            color: #cbd5e1;
+            margin-bottom: 0.5rem;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #334155;
+            border-radius: 0.5rem;
+            background: #1e293b;
+            color: #f8fafc;
+        }
+        .form-group input:focus {
+            outline: none;
+            border-color: #7e22ce;
+        }
+        .auth-button {
+            width: 100%;
+            padding: 0.75rem;
+            background: linear-gradient(135deg, #7e22ce, #6b21a8);
+            color: white;
+            border: none;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            font-weight: 500;
+        }
+        .auth-button:hover {
+            background: linear-gradient(135deg, #6d21b8, #5a1d8f);
+        }
+        .auth-link {
+            text-align: center;
+            margin-top: 1rem;
+            color: #94a3b8;
+        }
+        .auth-link a {
+            color: #7e22ce;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="auth-container">
+        <h1 class="auth-title">مرحبًا بك في ATIGAI</h1>
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="loginEmail">البريد الإلكتروني</label>
+                <input type="email" id="loginEmail" required>
+            </div>
+            <div class="form-group">
+                <label for="loginPassword">كلمة المرور</label>
+                <input type="password" id="loginPassword" required>
+            </div>
+            <button type="submit" class="auth-button">تسجيل الدخول</button>
+        </form>
+        <div class="auth-link">
+            ليس لديك حساب؟ <a href="register.html">أنشئ حسابًا الآن</a>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            const email = document.getElementById('loginEmail').value;
+            const password = document.getElementById('loginPassword').value;
+            // Add your login logic here
+            alert('تم تسجيل الدخول بنجاح!');
+            window.location.href = '../index.html';
+        });
+    </script>
+</body>
+</html>

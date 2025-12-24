@@ -1,0 +1,76 @@
+<div class="tab-content" id="settingsTab">
+    <h2 class="section-title">الإعدادات</h2>
+    <div class="settings-content">
+        <div class="account-settings">
+            <h3>إعدادات الحساب</h3>
+            <div class="setting-item">
+                <label>الاسم</label>
+                <input type="text" value="أيمن طه" readonly>
+            </div>
+            <div class="setting-item">
+                <label>البريد الإلكتروني</label>
+                <input type="email" value="ayman@example.com" readonly>
+            </div>
+            <div class="setting-item">
+                <label>الهاتف</label>
+                <input type="tel" value="+972591234567">
+            </div>
+            <div class="setting-item">
+                <label>البلد</label>
+                <input type="text" value="فلسطين">
+            </div>
+        </div>
+
+        <div class="usage-summary">
+            <h3>ملخص الاستخدام</h3>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h4>إجمالي الصور المنشأة</h4>
+                    <p id="totalGeneratedCount">0</p>
+                </div>
+                <div class="stat-card">
+                    <h4>محفوظ في المعرض</h4>
+                    <p id="totalSavedCount">0</p>
+                </div>
+                <div class="stat-card">
+                    <h4>الرصيد المستخدم</h4>
+                    <p id="creditsUsedCount">0</p>
+                </div>
+                <div class="stat-card">
+                    <h4>معدل الاستخدام اليومي</h4>
+                    <p id="dailyUsageRate">0%</p>
+                </div>
+            </div>
+            <canvas id="usageChart" width="400" height="200"></canvas>
+        </div>
+
+        <div class="premium-section">
+            <h3>افتح ميزات البريميوم</h3>
+            <div class="premium-benefits">
+                <div class="benefit">
+                    <span>✓</span>
+                    <p>لا يوجد أوقات انتظار أو إعلانات</p>
+                </div>
+                <div class="benefit">
+                    <span>✓</span>
+                    <p>جودة صور 4K فائقة الوضوح</p>
+                </div>
+                <div class="benefit">
+                    <span>✓</span>
+                    <p>أولوية في طابور التوليد</p>
+                </div>
+                <div class="benefit">
+                    <span>✓</span>
+                    <p>رصيد يومي غير محدود</p>
+                </div>
+            </div>
+            <button class="premium-button">ترقية إلى البريميوم الآن</button>
+            <p class="premium-info">دعمك يساعدنا على تحسين ATIGAI وإبقائه مجانيًا للجميع.</p>
+        </div>
+
+        <div class="support-section">
+            <h3>تحتاج مساعدة أو لديك ملاحظات؟</h3>
+            <button class="contact-btn">اتصل بالدعم</button>
+        </div>
+    </div>
+</div>

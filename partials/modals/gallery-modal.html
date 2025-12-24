@@ -1,0 +1,25 @@
+<div class="gallery-modal" id="galleryModal">
+    <div class="gallery-modal-content">
+        <div class="gallery-modal-close" id="galleryModalClose">&times;</div>
+        <img id="galleryModalImage" src="" alt="Gallery Image">
+        <div class="gallery-modal-info">
+            <h3>تفاصيل التوليد</h3>
+            <p><strong>الوصف:</strong> <span id="galleryModalPrompt"></span></p>
+            <p><strong>النموذج:</strong> <span id="galleryModalModel"></span></p>
+            <p><strong>الجودة:</strong> <span id="galleryModalQuality"></span></p>
+            <p><strong>الحجم:</strong> <span id="galleryModalSize"></span></p>
+            <p><strong>النمط:</strong> <span id="galleryModalStyle"></span></p>
+            <p><strong>التاريخ:</strong> <span id="galleryModalDate"></span></p>
+        </div>
+        <div class="gallery-modal-actions">
+            <button class="gallery-modal-btn gallery-modal-download" id="galleryModalDownload">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a2 2 0 002 2h12a2 2 0 002-2v-1M7 10l5 5m0 0l5-5m-5 5V4" /></svg>
+                <span>تنزيل</span>
+            </button>
+            <button class="gallery-modal-btn gallery-modal-regenerate" id="galleryModalRegenerate">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"></path><path d="M21 3v5h-5"></path><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"></path><path d="M8 16H3v5"></path></svg>
+                <span>إعادة توليد</span>
+            </button>
+        </div>
+    </div>
+</div>
